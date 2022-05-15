@@ -1,0 +1,73 @@
+.wrapHead {
+	.title {
+		padding: 16px 0 28px;
+		font-size: 32px;
+		font-weight: 700;
+		@media (max-width: $viewport_mobile) {
+			font-size: 24px;
+			padding-top: 12px;
+			padding: 12px 0 16px;
+		}
+	}
+	.txt {
+		font-size: 16px;
+			@media (max-width: $viewport_mobile) {
+				font-size: 15px;
+			}
+	}
+}
+.main--forgot {
+	.forgotTbl {
+		margin-top: 68px;
+		@media (max-width: $viewport_mobile) {
+			margin-top: 64px;
+		}
+	}
+	.boxComplete {
+		margin-top: 40px;
+		background: #FAFAFA;
+		border: 1px solid #E4E4E4;
+		padding: 40px 38px;
+		@media (max-width: $viewport_mobile) {
+			padding: 28px 22px;
+		}
+		.complete-head {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 40px;
+			@media (max-width: $viewport_mobile) {
+				padding-bottom: 28px;
+			}
+			.complete-tlt {
+				color: #2874DD;
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+				@media (max-width: $viewport_mobile) {
+					text-align: left;
+					font-size: 16px;
+				}
+			}
+			.complete-txt {
+				font-size: 16px;
+				margin-top: 18px;
+				@media (max-width: $viewport_mobile) {
+					font-size: 15px;
+				}
+			}
+		}
+		.complete-cmt {
+			padding-top: 24px;
+			.complete-txt {
+				margin-bottom: 16px;
+				font-size: 13px;
+				color: #777;
+				@media (max-width: $viewport_mobile) {
+					font-size: 12px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

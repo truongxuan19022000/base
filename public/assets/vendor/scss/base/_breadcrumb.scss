@@ -1,0 +1,42 @@
+.breadcrumb {
+	background-color: #FAFAFA;
+	border-bottom: 1px solid #E4E4E4;
+	display: block;
+	padding: 8px 0;
+	margin: 0;
+	border-radius: 0;
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		overflow-x: auto;
+		li {
+			padding-right: 24px;
+			color: #777;
+			font-size: 12px;
+			position: relative;
+			white-space: nowrap;
+			&::after {
+				position: absolute;
+				top: 5px;
+				right: 10px;
+				content: "";
+				height: 7px;
+				width: 4px;
+				background: url(../images/common/icon-breadcrumb.svg) no-repeat;
+				display: block;
+			}
+			&.active {
+				font-weight: 600;
+			}
+			&:last-child {
+				padding-right: 0;
+				&::after {
+					background: none;
+				}
+			}
+			a {
+				color: #777;
+			}
+		}
+	}
+}

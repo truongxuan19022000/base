@@ -1,0 +1,180 @@
+.wrapper {
+    .sidebar {
+        width: 230px;
+        transition: 150ms all;
+        box-shadow: rgb(0 0 0) 0px 3px 9px;
+        z-index: 1000;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        background-color: #282A35;
+
+        .sideBar-top {
+            visibility: visible;
+            display: flex;
+            align-items: center;
+            padding: 15px 0px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-left: 20px;
+        }
+        .gNav {
+            padding-right: 15px;
+        }
+
+        .menu {
+            margin: 0;
+            padding: 0;
+            .submenu {
+                margin-left: 60px;
+                background: hwb(0deg 31% 69%/80%);
+                padding: 0 0 0 10px;
+            
+                .item {
+                    margin: 0;
+                }
+            }
+        }
+
+        .menu-0>.item>a {
+            padding-left: 10px;
+        }
+        
+        .menu-0>.item>a>img {
+            padding: 0 10px;
+            margin-right: 10px;
+            width: 40px;
+        }
+        
+        .item {
+            color: #fff;
+            text-indent: 3px;
+            line-height: 40px;
+            padding: 0;
+            margin-top: 15px;
+        
+            a {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 15px;
+                font-weight: 500;
+                color: #fff;
+                    
+                &:hover {
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+                }
+                    
+                &.active>a>img {
+                    background: #fff;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+                }
+                
+                .icon-right {
+                    width: 34px;
+                }
+                
+                li:hover,
+                li.active {
+                    opacity: 1;
+                    color: #fff;
+                    font-weight: 500;
+                }
+                
+                li.active {
+                    font-weight: 500;
+                }
+        .toogle-menu {
+            flex-grow: 1;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .icon-bar {
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        .menu-text {
+            transition: 150ms all;
+        }
+    }
+
+    .layout-content {
+        transition: 150ms all;
+    }
+
+    &.toggled {
+        .sidebar {
+            width: 60px;
+
+            .logo {
+                display: none;
+            }
+
+            .menu-text {
+                display: none;
+            }
+        }
+
+        .layout-content {
+            margin-left: 60px;
+        }
+    }
+}
+
+
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    background: #416776;
+    border: none;
+}
+
+
+
+.ui-widget-content a {
+    color: #c0c0c0;
+}
+
+.ui-widget-content a:hover {
+    color: #ffffff;
+}
+
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.divider {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.label {
+    padding-left: 25px;
+}
+
+hr {
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

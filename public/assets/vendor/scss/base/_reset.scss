@@ -1,0 +1,147 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video, button {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:top;
+	background:transparent;
+}
+html {
+	touch-action: manipulation;
+	-ms-touch-action: manipulation;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-overflow-scrolling: touch;
+}
+*, 
+*:before, 
+*:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.f-roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif, Lato, Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "ＭＳ Ｐゴシック", "MS PGothic";
+	color: #222;
+	width: 100%;
+	background-color: #fff;
+	font-size: 14px;
+	word-wrap: break-word;
+	line-height: 1.6;
+}
+
+/** --a-- **/
+a {
+	transition: all ease 0.3s;
+	text-decoration: none;
+	color: #29324B;
+	&:hover {
+		text-decoration: none;
+		color: #29324B;
+	}
+}
+.pc-only {
+  @media (max-width: $viewport_mobile) {
+    display: none;
+  }
+}
+
+.sp-only {
+  display: none;
+  @media (max-width: $viewport_mobile) {
+    display: block;
+  }
+}
+/** --img-- **/
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+/** --ul-- **/
+ul {
+	margin: 0;
+	list-style: none;
+}
+/** common ***/
+.wrapper {
+}
+.wrap {
+	max-width: 1232px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+.wrap-800 {
+	max-width: 832px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+.main {
+	padding-bottom: 80px;
+	@media (max-width: $viewport_tablet) {
+		padding-bottom: 56px;
+	}
+	&.main--boxGray {
+		background: #F4F4F6;
+	}
+}
+
+/*****/
+.spanControl {
+	padding: 1px 6px;
+	display: inline-block;
+}
+.spanRequired {
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: 700;
+	background: #E81A69;
+	color: #fff;
+}
+.spanAny {
+	font-size: 10px;
+	line-height: 14px;
+	font-weight: 700;
+	background: #E1E2E6;
+	color: #777;
+}
+.spanRed {
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: 500;
+	color: #fff;
+	background: #E81A69;
+}
+.spanPending {
+	font-size: 12px;
+	font-weight: 500;
+	color: #C6004C;
+	background: rgba(232,26,105,8%);
+}
+.spanApproved {
+	font-size: 12px;
+	font-weight: 500;
+	color: #009D7F;
+	background: rgba(0,213,172,8%);
+}

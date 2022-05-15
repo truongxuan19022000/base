@@ -1,0 +1,83 @@
+.main--login {
+	@media (max-width: $viewport_mobile) {
+		padding-bottom: 12px;
+	}
+	.login {
+		padding-top: 56px;
+		@media (max-width: $viewport_mobile) {
+			padding: 0;
+		}
+		.boxLogin {
+			background: #fff;
+			border: 1px solid #29324B;
+			max-width: 480px;
+			margin: 0 auto;
+			box-shadow: 0 5px 3px rgba(0,0,0,8%);
+			padding: 50px 40px 55px;
+			@media (max-width: $viewport_mobile) {
+				border: none;
+				padding: 48px 16px 48px;
+				max-width: 100%;
+			}
+		}
+		.login-title {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 40px;
+			@media (max-width: $viewport_mobile) {
+				font-size: 22px;
+				margin-bottom: 28px;
+			}
+		}
+		.login-note {
+			font-size: 16px;
+			padding-bottom: 15px;
+			@media (max-width: $viewport_mobile) {
+				font-size: 15px;
+				padding-bottom: 46px;
+			}
+		}
+		.formLogin {
+			margin-top: 14px;
+			.formLogin-label {
+				color: #29324B;
+				font-size: 12px;
+				font-weight: 500;
+				margin-bottom: 8px;
+			}
+			.formLogin-control {
+				.form-control {
+					height: 48px;
+				}
+			}
+		}
+		.formLogin-btn {
+			margin-top: 16px;
+			.btn {
+				height: 56px;
+			}
+		}
+		.forgotten {
+			margin-top: 34px;
+			.formLogin-control {
+				margin-top: 24px;
+			}
+			a {
+				text-decoration: underline;
+				font-weight: 500;
+			}
+		}
+		.haveNot {
+			margin-top: 40px;
+			padding-top: 26px;
+			border-top: 1px solid #ccc;
+			@media (max-width: $viewport_mobile) {
+				margin-top: 26px;
+			}
+			.btn {
+				margin-top: 18px;
+				height: 56px;
+			}
+		}
+	}
+}
